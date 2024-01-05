@@ -20,14 +20,13 @@ read -p "what will we do ? [1,2,3] : " ans;
 		sleep 2
 		echo "Welcome to Ncmpcpp Installer"
 		echo "We will instal and configure Ncmcpp And Mpd"
-		sudo apt-get install ncmpcpp mpd mpc
+		sudo pacman -S mpd mpc ncmpcpp
 		configure
 		;;
 	2)
 		sleep 2
 		echo "We will remove Ncmpcpp and Mpd"
-		sudo apt-get remove ncmpcpp mpd
-		sudo apt-get purge ncmpcpp mpd
+		sudo pacman -Rc mpd mpc ncmpcpp		
 		menu
 		;;
 	9)
