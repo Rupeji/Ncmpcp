@@ -44,6 +44,7 @@ configure(){
 
 	echo "Wait We Will Configure Your  Mpd ......"
 	sleep 2
+ 	mkdir ~/Music
 	mkdir ~/.mpd
 	cd ~/.mpd
 	pwd
@@ -60,8 +61,8 @@ configure(){
 		 port "6600"
  		 bind_to_address "127.0.0.1"
  		 #bind_to_address "~/.mpd/socket"
- 		 music_directory "/home/inhumano/Music/"
- 		 playlist_directory "~/home/inhumano/Music"
+ 		 music_directory "/home/Music/"
+ 		 playlist_directory "/home/Music/"
  		 db_file      "~/.mpd/mpd.db"
  		 log_file      "~/.mpd/mpd.log"
  		 pid_file      "~/.mpd.pid"
@@ -89,8 +90,8 @@ amu
                  port "6600"
                  bind_to_address "127.0.0.1"
                  #bind_to_address "~/.mpd/socket"
-                 music_directory "/home/inhumano/Music/"
-                 playlist_directory "~/Music"
+                 music_directory "/home/Music/"
+                 playlist_directory "/home/Music/"
                  db_file      "~/.mpd/mpd.db"
                  log_file      "~/.mpd/mpd.log"
                  pid_file      "~/.mpd/mpd.pid"
